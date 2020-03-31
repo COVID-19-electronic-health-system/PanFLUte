@@ -1,0 +1,8 @@
+language: c
+services: docker
+before_install: 
+- sudo apt-get update -qq  
+- docker build -t panflute:1.0 .
+install: sudo apt-get install -qq gcc-avr binutils-avr avr-libc
+before_script: cd board
+script: make
