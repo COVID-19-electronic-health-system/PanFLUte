@@ -11,3 +11,14 @@
 
 PanFLUte (Pneumonia analyzing node for FLU to everyone) is an open source spirometer.
 It is used to measures the amount of air you're able to breathe in and out.
+
+### Compiling firmware in Docker
+1. Build docker image
+```
+docker build -t panflute:1.0 .
+```
+2. Run docker image 
+```
+docker run -it panflute:1.0
+```
+3. You should now be greeted with a terminal environment, which has all the necessary libraries needed to compile the firmware.
