@@ -15,13 +15,9 @@ The block diagram representing the general scheme of the software.
   <img src="https://imgur.com/klRlwUa.png"/>
 </p> 
 
+# Installation 
 ### Compiling firmware in Docker
-1. Build docker image
-```
-docker build -t panflute:1.0 .
-```
-2. Run docker image 
-```
-docker run -it panflute:1.0
-```
-3. You should now be greeted with a terminal environment, which has all the necessary libraries needed to compile the firmware.
+1. ```git clone https://github.com/COVID-19-electronic-health-system/PanFLUte.git```
+2. ``` docker build -t panflute:1.0 .```
+3. ```docker run -it panflute:1.0```
+4. You should now be greeted with a terminal environment, which has all the necessary libraries needed to compile the firmware.
