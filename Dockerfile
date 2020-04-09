@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:18.04
 
 WORKDIR panFLUte/
 COPY board .
