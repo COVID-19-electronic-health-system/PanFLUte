@@ -1,6 +1,15 @@
 #include "../driver/adc.h"
 
 void adcInit(void) { 
-  /* Enable ADC and start conversion */
-  ADCSRA |= ((1 << ADEN) | (1 << ADSC));
+  /* Enable ADC */
+  ADCSRA |= (1 << ADEN);
+  /* Left Adjust Results */
+  ADCSRB |= (1 << ADLAR);
+}
+
+uint8_t adcStart(void) {
+  ADCSRA |= (1 << ADSC); // Start ADC conversion 
+  loop_until_bit_is_clear(ADCSRA, ADSC); 
+  rawPresureData = ADCH; // Max is 8bit value
+  return rawPresureData;
 }
