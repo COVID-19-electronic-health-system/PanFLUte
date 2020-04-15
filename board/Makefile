@@ -6,9 +6,12 @@ OBJCOPY=avr-objcopy
 CFLAGS=-Wall -g -Os -mmcu=${MCU} -DF_CPU=${F_CPU}
 TARGET=main
 SRC=main.c 
+ADC_LIB=adc/adc.c
+USART_LIB=usart/usart.c
+MPX_LIB=mpx5100/mpx5100.c
 
 all:
-	${CC} ${CFLAGS} ${SRC} -o firmware/${TARGET}.bin -std=c99
+	${CC} ${CFLAGS} ${SRC} ${ADC_LIB} ${USART_LIB} ${MPX_LIB} -o firmware/${TARGET}.bin -std=c99
 	${OBJCOPY} -j .text -j .data -O ihex firmware/${TARGET}.bin firmware/${TARGET}.hex
 
 flash:
