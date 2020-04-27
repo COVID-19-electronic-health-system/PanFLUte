@@ -6,7 +6,13 @@ void ledInit(void) {
 
 void idle_blink(unsigned int period) {
     PORTA |= (1 << STATUS_LED);
-    _delay_ms(period);
+    delay_ms(period);
     PORTA &= ~(1 << STATUS_LED);
-    _delay_ms(period/2);
+    delay_ms(period/2);
+}
+
+void delay_ms(unsigned int ms) {
+    for (int i = 0; i < ms; i++) {
+        _delay_ms(1);
+    }
 }

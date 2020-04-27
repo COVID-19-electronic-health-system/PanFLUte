@@ -4,3 +4,4 @@
 
 void ledInit(void);
 void idle_blink(unsigned int period);
+void delay_ms(unsigned int ms);
