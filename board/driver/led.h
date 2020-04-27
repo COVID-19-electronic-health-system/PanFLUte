@@ -3,4 +3,4 @@
 #define STATUS_LED PA1
 
 void ledInit(void);
-void idle_blink(unsigned char period);
+void idle_blink(unsigned int period);
