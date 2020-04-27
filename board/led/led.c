@@ -4,9 +4,9 @@ void ledInit(void) {
     DDRA |= (1 << DDA1);
 }
 
-void idle_blink(void) {
+void idle_blink(unsigned char period) {
     PORTA |= (1 << STATUS_LED);
-    _delay_ms(500);
+    _delay_ms(period);
     PORTA &= ~(1 << STATUS_LED);
-    _delay_ms(250);
+    _delay_ms(period/2);
 }
