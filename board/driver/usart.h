@@ -1,5 +1,5 @@
 #include <avr/io.h>
-#define FOCS 1000000
+#define FOCS 2000000
 #define BAUD 9600
 #define MYUBRR FOCS/16/BAUD-1
 void usartInit(unsigned int ubrr);

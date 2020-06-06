@@ -2,10 +2,9 @@
 #include "driver/led.h" 
 
 int main(void) {
-    ledInit(); 
-    usartInit(12);
+    usartInit(MYUBRR);
     while(1) {	
-	usartTransmit(10);
+	usartTransmit(54);
     	delay_ms(100);
     }
     return 0;
