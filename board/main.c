@@ -1,9 +1,12 @@
+#include "driver/usart.h"
 #include "driver/led.h" 
 
 int main(void) {
     ledInit(); 
-    while(1) {
-        idle_blink(500); // Blinks PanFLUte's on-board LED 
+    usartInit(12);
+    while(1) {	
+	usartTransmit(10);
+    	delay_ms(100);
     }
     return 0;
 }

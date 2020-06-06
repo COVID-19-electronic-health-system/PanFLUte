@@ -8,6 +8,7 @@ void usartInit(unsigned int ubrr) {
     UCSR0B = ((1 << RXEN0) | (1 << TXEN0));
     /* Set frame format: 8data, 1 stop bit */
     UCSR0C = ((1 << UCSZ00) | (1 << UCSZ01));
+    UCSR0A = (1 << U2X0); // Double the USART Transmission Speed 
 }
 
 
