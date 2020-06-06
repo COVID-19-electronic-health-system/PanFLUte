@@ -26,3 +26,10 @@ unsigned char usartReceive(void) {
     /* Get and return received data from buffer */
     return UDR0;
 }
+
+int print(char c, FILE *stream) {
+    while((UCSR0A & (1 << UDRE0)) == 0);
+    UDR0 = c;
+    return 0;
+}
+ 
