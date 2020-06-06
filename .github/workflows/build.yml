@@ -18,4 +18,4 @@ jobs:
         - name: Install dependencies
         run: sh install.sh
         - name: Build PanFLUte firmware
-        run: cd boards && make
+        run: cd board && make
