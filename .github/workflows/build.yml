@@ -1,0 +1,21 @@
+on:
+  # Trigger the workflow on push or pull request,
+  # but only for the master branch
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+      - devel
+
+jobs:
+    build:
+        name: Checkout master
+        runs-on: ubuntu-18.04
+        steps:
+        - uses: actions/checkout@v2
+        - name: Install dependencies
+        run: sh install.sh
+        - name: Build PanFLUte firmware
+        run: cd boards && make
