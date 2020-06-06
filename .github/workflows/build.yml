@@ -16,6 +16,6 @@ jobs:
         steps:
         - uses: actions/checkout@v2
         - name: Install dependencies
-        run: sh install.sh
+          run: sh install.sh 
         - name: Build PanFLUte firmware
-        run: cd board && make
+          run: cd board && make
