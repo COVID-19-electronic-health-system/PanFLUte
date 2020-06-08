@@ -2,4 +2,4 @@
 #include <stdint.h>
 
 void adcInit(void);
-uint8_t adcStart(void);
+//void getPSI(void);

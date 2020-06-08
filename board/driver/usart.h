@@ -8,4 +8,3 @@ void usartInit(unsigned int ubrr);
 void usartTransmit(unsigned char data);
 unsigned char usartReceive(void);
 int print(char c, FILE *stream);
-
