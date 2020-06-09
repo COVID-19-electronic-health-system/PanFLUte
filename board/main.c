@@ -1,4 +1,3 @@
-#include <util/delay.h>
 #include "driver/usart.h"
 #include "driver/led.h"
 #include "driver/adc.h"
