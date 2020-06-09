@@ -2,7 +2,6 @@
 #include "driver/usart.h"
 #include "driver/led.h"
 #include "driver/adc.h"
-#define OFFSET 44
 
 static FILE mystdout = FDEV_SETUP_STREAM(print, NULL, _FDEV_SETUP_RW);
 
