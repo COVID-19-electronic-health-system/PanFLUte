@@ -4,8 +4,8 @@ void adcInit(void) {
   /* Enable ADC */
   ADCSRA = (1 << ADEN) | (1 << ADSC);
   /* Left Adjust Results */
-  ADCSRB = (1 << ADLAR);
- //printf("ADC has started\n");
+  //ADCSRB = (1 << ADLAR);
+  //printf("ADC has started\n");
 }
 
 /*
