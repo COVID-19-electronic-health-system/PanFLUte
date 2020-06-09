@@ -3,7 +3,7 @@ PROGRAMMER=atmelice_isp
 F_CPU=1000000 
 CC=avr-gcc
 OBJCOPY=avr-objcopy
-CFLAGS=-Wall -g -Os -mmcu=${MCU} -DF_CPU=${F_CPU} -Wl,-u,vfprintf 
+CFLAGS=-Wall -g -Os -mmcu=${MCU} -DF_CPU=${F_CPU} -Wl,-u,vfprintf -lprintf_flt -lm  
 TARGET=main
 SRC=main.c 
 ADC_LIB=adc/adc.c
