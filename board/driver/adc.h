@@ -1,7 +1,11 @@
+#include <stdio.h>
 #include <avr/io.h>
-#include <stdint.h>
-#define OFFSET 44 
+#include <math.h>
+#include <util/delay.h>
+#define SENSITIVITY 44.00
 
+float kiloPascal, pascal;
+float flow;
 void adcInit(void);
-//void getPSI(void);
-//uint8_t adcStart(void);
+void getPascal(void);
+void getFlowRate(void);
