@@ -2,7 +2,7 @@
 #define MPX5100_H
 
 #include "../driver/adc.h"
-#define MAX_PRESSURE 120 // Pressure in KPa
+#define MAX_PRESSURE 120.0 // Pressure in KPa
 
 float pascal, adc_val;
 void getPascal(void);
