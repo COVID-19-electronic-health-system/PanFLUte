@@ -1,3 +1,6 @@
+#ifndef ADC_H
+#define ADC_H
+
 #include <stdio.h>
 #include <avr/io.h>
 #include <math.h>
@@ -9,3 +12,5 @@ int adc_values_arr[N];
 float calibrated_adc_value;
 void adcInit(void);
 float adcRead(void);
+
+#endif // ADC_H
