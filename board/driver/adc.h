@@ -7,9 +7,5 @@
 
 int adc_values_arr[N];
 float calibrated_adc_value;
-float kiloPascal, pascal;
-float flow;
 void adcInit(void);
-void getPascal(void);
-void getFlowRate(void);
-void rawADC(void);
+float adcRead(void);
