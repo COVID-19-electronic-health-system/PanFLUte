@@ -8,6 +8,6 @@ int main(void) {
 	usartInit(MYUBRR);
     stdout = &mystdout;
     while(1) {	
-         rawADC();
+	adcRead();
     }
 }
