@@ -1,3 +1,4 @@
+#include "../driver/mpx5100.h"
 #include "../driver/adc.h"
 
 
@@ -10,7 +11,7 @@
 void getPascal(void) {
 	adc_val = adcRead();
 	pascal = ((adc_val / 1023.0) * MAX_PRESSURE) * 1000.0;
- 	printf("%.2f Pa\n" pascal);
+ 	printf("%.2f Pa\n", pascal);
 	_delay_ms(250);
 }
 
