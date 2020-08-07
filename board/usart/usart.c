@@ -1,5 +1,11 @@
 #include "../driver/usart.h"
 
+/** @defgroup group3 USART Library
+ *  This library contains all the neccessary code for serial transmission.
+ *  @{
+ */
+
+/** This function enables the receiver and tranmitter.*/
 void usartInit(unsigned int ubrr) {
     /* Set baud rate */
     UBRR0H = (unsigned char)(ubrr >> 8);
@@ -11,7 +17,7 @@ void usartInit(unsigned int ubrr) {
     UCSR0A = (1 << U2X0); // Double the USART Transmission Speed 
 }
 
-
+/** This function transmit data on the TX pin.*/ 
 void usartTransmit(unsigned char data) {
     /* Wait for empty transmit buffer */
     while(!(UCSR0A & (1 << UDRE0))); 
@@ -19,7 +25,7 @@ void usartTransmit(unsigned char data) {
     UDR0 = data;
 }
 
-
+/** This function receives data from the RX pin.*/
 unsigned char usartReceive(void) {
     /* Wait for data to be received */
     while(!(UCSR0A & (1 << RXC0)));

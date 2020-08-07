@@ -1,12 +1,23 @@
 #include "../driver/adc.h"
 
+
+
+
+/** @defgroup group1 TinyADC Library
+ *  This is a minimal ADC Library with init and read functions only.
+ *  @{
+ */
+ 
+/** @brief class C1 in group 1 */
+
 void adcInit(void) { 
-  /* Enable ADC */
+  /// Enables ADC.
   ADCSRA = (1 << ADEN) | (1 << ADSC);
 }
 
 float adcRead(void) {
-    float sum = 0;
+    /// Returns calibrated adc values. 
+    float sum = 0; // Sum of averaged adc values
     int adc_values_arr[N];
     for (int i = 0; i < N; i++) {
 	   while(ADCSRA & (1 << ADSC));
