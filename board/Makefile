@@ -1,4 +1,4 @@
-MCU=attiny441
+MCU=attiny841
 PROGRAMMER=atmelice_isp
 F_CPU=1000000 
 CC=avr-gcc

@@ -1,3 +1,6 @@
+#ifndef USART_H
+#define USART_H
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <avr/io.h>
@@ -8,3 +11,5 @@ void usartInit(unsigned int ubrr);
 void usartTransmit(unsigned char data);
 unsigned char usartReceive(void);
 int print(char c, FILE *stream);
+
+#endif // USART_H

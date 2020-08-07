@@ -1,3 +1,10 @@
-#include "../driver/adc.h"
-// #define SIGNAL_OFFSET // This value corresponds to an air flow of 0
+#ifndef MPX5100_H
+#define MPX5100_H
 
+#include "../driver/adc.h"
+#define MAX_PRESSURE 120.0 // Pressure in KPa
+
+float pascal, adc_val;
+void getPascal(void);
+
+#endif // MPX5100_H
