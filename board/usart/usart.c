@@ -38,4 +38,5 @@ int print(char c, FILE *stream) {
     UDR0 = c;
     return 0;
 }
- 
+
+/** @} */ // end of group3 

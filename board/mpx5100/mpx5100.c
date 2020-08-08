@@ -3,7 +3,7 @@
 
 
 /** @defgroup group2 MPX5100 Library
- *  This is library interfaces with the mpx5100.
+ *  This library interfaces with the MPX5100.
  *  @{
  */
 
