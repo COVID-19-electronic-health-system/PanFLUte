@@ -16,3 +16,9 @@ It is used to measures the amount of air you're able to breathe in and out.
 2. ```docker build -t panflute:1.0 .```
 3. ```docker run --rm -it --privileged -v /dev/bus/usb:/dev/bus/usb panflute:1.0```
 4. You should now be greeted with a terminal environment, which has all the necessary libraries needed to compile and flash the firmware.
+
+Directory Structure
+------
+    .
+    ├── board               # Code that runs on the ATtiny841
+    └── doc                 # Doxygen documentation folder
