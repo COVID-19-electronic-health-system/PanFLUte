@@ -1,6 +1,4 @@
 #include "../driver/mpx5100.h"
-#include "../driver/adc.h"
-
 
 /** @defgroup group2 MPX5100 Library
  *  This library interfaces with the MPX5100.
