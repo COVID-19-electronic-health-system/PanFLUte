@@ -1,8 +1,6 @@
-<div>
-<p align=center> 
-  <img src="https://imgur.com/P6kJoAm.png"/>
-</p> 
-</div>
+<p style="text-align:center;">
+<img src="https://imgur.com/wm1vdUq.png" max-width="100%" height="350" />
+</p>
 
 ![panflute tests](https://github.com/COVID-19-electronic-health-system/PanFLUte/workflows/panflute%20tests/badge.svg)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1d36eea6-7947-41e3-bcce-38e6f9446aee/deploy-status)](https://app.netlify.com/sites/panflute-docs/deploys)
