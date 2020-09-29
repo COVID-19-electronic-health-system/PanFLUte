@@ -20,7 +20,7 @@ It is used to measures the amount of air you're able to breathe in and out.
 Directory Structure
 ------
     .
-    ├── bootloaader         # Firmware that runs on the NRF52
+    ├── bootloader          # Firmware that runs on the NRF52
     ├── board               # Code that runs on the ATtiny841
     └── doc                 # Doxygen documentation folder
 
